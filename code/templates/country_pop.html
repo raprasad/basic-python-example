@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+<b>Population by Year{% if selected_country %}:
+                <span style="color:#940722;"> {{ selected_country }}</span>
+            {% endif %}
+</b>
+
+<div class="row" id="row_main_content">
+    
+    {% if err_found %}
+        <div class="col-xs-12">
+            <div class="alert alert-warning" role="alert">{{ err_msg|safe }}</div>    
+            
+            <br />Return to <a href="/pop/USA">USA population</a>
+        </div>
+    {% endif %}
+    
+    {% if not err_found %}
+    
+        {#% include 'pop_chart.html' %#}
+        {#% include 'pop_table.html' %#}        
+    
+    
+    <div class="col-sm-6">
+         <h4>country list</h4>
+         {% for c in country_names %}
+                {% if selected_country == c %}
+                    <span style="font-size:200%; color:#940722;">{{ c.lower() }}</span>
+                {% else %}
+		            <a href="/pop/{{ c }}">{{ c.lower() }}</a>
+                {% endif %}
+		        {% if not loop.last %} | {% endif %}
+		  {% endfor %}
+	</div>
+	{% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,20 @@
+<div class="col-xs-12 col-sm-6">
+    
+  <table class="table table-bordered table-condensed">
+     <thead>
+          <tr>
+              <th>Year</th>
+              <th>Population</th>
+        </tr>
+    </thead>
+  
+  {% for year, pop in year_pop_pairs %}
+    <tr>
+        <td>{{ year }}</td>
+        <td>{{ '{0:,}'.format(pop) }}</td>
+    </tr>
+  {% endfor %}
+  
+  </table>
+  
+</div>

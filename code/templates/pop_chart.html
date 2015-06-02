@@ -1,0 +1,17 @@
+<div class="col-xs-12">
+    <div id="chart"></div>
+    
+    <script>
+    var chart = c3.generate({
+        data: {
+            x: 'x',
+            columns: [
+                ['x', {{ year_list[:]|join(', ') }}],
+                ['{{ selected_country|safe }}', {{ pop_list[:]|join(', ') }}],
+                //['x', 30, 50, 100, 230, 300, 310],
+                //['data2', 130, 300, 200, 300, 250, 450]
+            ]
+        }
+    });
+    </script>
+</div>

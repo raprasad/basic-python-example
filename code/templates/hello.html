@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+hello, {{ name }}!
+
+<ul>
+{% for item in list_of_things %}
+    <li>{{ item }}</li>
+{% endfor %}
+</ul>
+{% endblock %}
