@@ -43,7 +43,7 @@ cd ~\basic-python-talk
 This may take a minute or two.  Xcode needs to be installed.
     
 ```
-mkvirtualenv eyedata
+mkvirtualenv basic-python-talk
 pip install -r requirements/local.txt
 ```
 
@@ -53,7 +53,7 @@ If you run into Xcode (or other errors) when running the install, google it.  So
 ## Working with the project (post installation)
 
 ```
-cd ~\eyeData\eyedata
-workon eyedata
+cd ~\basic-python-talk\code
+workon basic-python-talk
 python manage.py runserver
 ```
