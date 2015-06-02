@@ -16,18 +16,17 @@ if not isfile(fname):
     
 # read file into data frame
 df = pd.read_csv(fname, sep='\t')
-print df['year']
 
 # show columns
 print df.columns
 print df.values
 
-# show types
-print df.types
-
 # show head/tail
 print df.head(10)
 print df.tail(10)
+
+print df['year']
+print df.loc[df['year'] == 1983]
 
 # drop missing vals
 df.dropna()

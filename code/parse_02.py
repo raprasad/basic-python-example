@@ -1,4 +1,5 @@
 import sys
+import pprint
 from os.path import isfile, join, dirname, realpath
 import pandas as pd
 
@@ -60,4 +61,9 @@ def get_country_info(selected_country):
         }
 
     return (True, data_dict)
+    
+if __name__=='__main__':
+    country_info_dict = get_country_info('USA')
+    pprint.pprint(country_info_dict, indent=4)
+    #print 
     

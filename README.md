@@ -58,16 +58,31 @@ workon basic-python-example
 python manage.py runserver
 ```
 
-### Run example
+### Web example
+
+
+#### Parse example
+
+- Open a Terminal/Shell
+- Go to directory ```\basic-python-example\code``` 
+    - With virtualenv activated (*workon basic-python-example*)
+- Type:
+```
+python
+```
+
 
 #### Basic server 1
 
-- Assume you are in directory ```\basic-python-example\code``` with virtualenv activated (*workon basic-python-example*)
+- Open a Terminal/Shell
+- Go to directory ```\basic-python-example\code```
+    - With virtualenv activated (*workon basic-python-example*)
 - Start [Flask](http://flask.pocoo.org/)
 ```
 python web_01.py
 ```
-- Go to (http://127.0.0.1:5000/)
+- Go to local Flask server: http://127.0.0.1:5000/
+- See file [web_01.py](https://github.com/raprasad/basic-python-example/blob/master/code/web_01.py)
 
 #### Basic server 2
 
@@ -77,5 +92,8 @@ python web_01.py
 python web_02.py
 ```
 - Go to [hello with template](http://127.0.0.1:5000/hello/yourname)
+    - See file [web_01.py](https://github.com/raprasad/basic-python-example/blob/master/code/web_02.py)
+
 - Go to [country list](http://127.0.0.1:5000/pop/USA)
+    - See template [https://github.com/raprasad/basic-python-example/blob/master/code/templates/country_pop.html#L26]
 
