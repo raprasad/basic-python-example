@@ -26,13 +26,13 @@ source /usr/local/bin/virtualenvwrapper.sh
 ``` 
 or, on windows, [this](http://stackoverflow.com/questions/2615968/installing-virtualenvwrapper-on-windows) might be helpful.
 
-#### Pull down the [short-python-talk repository](https://github.com/raprasad/short-python-talk)
+#### Pull down the [basic-python-example repository](https://github.com/raprasad/basic-python-example)
 
 * Use the [mac client](https://mac.github.com/) if desired or [windows client](https://windows.github.com/)
 
 ### Setup on the local machine
 
-#### cd into the ```short-python-talk``` repository
+#### cd into the ```basic-python-example``` repository
 
 ```
 cd ~\basic-python-talk
