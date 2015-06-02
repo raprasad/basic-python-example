@@ -26,13 +26,13 @@ source /usr/local/bin/virtualenvwrapper.sh
 ``` 
 or, on windows, [this](http://stackoverflow.com/questions/2615968/installing-virtualenvwrapper-on-windows) might be helpful.
 
-#### Pull down the [github repository](https://github.com/raprasad/short-python-talk)
+#### Pull down the [short-python-talk repository](https://github.com/raprasad/short-python-talk)
 
 * Use the [mac client](https://mac.github.com/) if desired or [windows client](https://windows.github.com/)
 
 ### Setup on the local machine
 
-#### cd into the eyeData repository
+#### cd into the ```short-python-talk``` repository
 
 ```
 cd ~\basic-python-talk
@@ -40,7 +40,7 @@ cd ~\basic-python-talk
 
 #### Install the virtualenv and the requirements
 
-This may take a minute or two.  Xcode needs to be installed.
+This may take a minute or two.  On Mac: Xcode needs to be installed.
     
 ```
 mkvirtualenv basic-python-talk
