@@ -1,7 +1,7 @@
-quick look at python
+basic python example
 =======
 
-Files for 6/3/2015
+- files for 6/3/2015
 
 ----
 
@@ -35,7 +35,7 @@ or, on windows, [this](http://stackoverflow.com/questions/2615968/installing-vir
 #### cd into the ```basic-python-example``` repository
 
 ```
-cd ~\basic-python-talk
+cd ~\basic-python-example
 ```
 
 #### Install the virtualenv and the requirements
@@ -43,8 +43,8 @@ cd ~\basic-python-talk
 This may take a minute or two.  On Mac: Xcode needs to be installed.
     
 ```
-mkvirtualenv basic-python-talk
-pip install -r requirements/local.txt
+mkvirtualenv basic-python-example
+pip install -r requirements/base.txt
 ```
 
 If you run into Xcode (or other errors) when running the install, google it.  Sometimes the [Xcode license agreement hasn't been accepted](http://stackoverflow.com/questions/26197347/agreeing-to-the-xcode-ios-license-requires-admin-privileges-please-re-run-as-r/26197363#26197363)
@@ -53,7 +53,29 @@ If you run into Xcode (or other errors) when running the install, google it.  So
 ## Working with the project (post installation)
 
 ```
-cd ~\basic-python-talk\code
-workon basic-python-talk
+cd ~\basic-python-example\code
+workon basic-python-example
 python manage.py runserver
 ```
+
+### Run example
+
+#### Basic server 1
+
+- Assume you are in directory ```\basic-python-example\code``` with virtualenv activated (*workon basic-python-example*)
+- Start [Flask](http://flask.pocoo.org/)
+```
+python web_01.py
+```
+- Go to (http://127.0.0.1:5000/)
+
+#### Basic server 2
+
+- Assume you are in directory ```\basic-python-example\code``` with virtualenv activated (*workon basic-python-example*)
+- Start [Flask](http://flask.pocoo.org/)
+```
+python web_02.py
+```
+- Go to [hello with template](http://127.0.0.1:5000/hello/yourname)
+- Go to [country list](http://127.0.0.1:5000/pop/USA)
+
