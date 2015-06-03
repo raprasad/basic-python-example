@@ -33,6 +33,7 @@ def get_country_info(selected_country):
     # check for country
     # --------------------------
     country_names = pd.unique(df['country'])
+    country_names.sort()
     if not selected_country in country_names:
         return (False, 'Country not found: %s' % selected_country)
     
