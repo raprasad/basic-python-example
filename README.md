@@ -12,11 +12,13 @@ This is a quick checklist to install virtualenv and virtualevnwrapper on an OS X
 #### Install [pip](http://pip.readthedocs.org/en/latest/installing.html)
 
 * use sudo if needed
+    * OS X: ```pip install -U pip```
 * if on Windows, make sure [python](https://www.python.org/downloads/) is installed.
 
 #### Install [virtualenvwrapper](http://virtualenvwrapper.readthedocs.org/en/latest/install.html)
 
 * depends on pip
+    * OS X: ```sudo pip install virtualenvwrapper```
 * if on windows, either install [virtualenvwrapper-win-1.1.5](https://pypi.python.org/pypi/virtualenvwrapper-win) or [cygwin](https://www.cygwin.com/).
 * remember to set the (shell startup file)[http://virtualenvwrapper.readthedocs.org/en/latest/install.html#shell-startup-file]
 ```
