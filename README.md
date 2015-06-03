@@ -70,7 +70,7 @@ python manage.py runserver
 ```
 python
 ```
-
+- Use these commands: [shell_parse.py]( https://github.com/raprasad/basic-python-example/blob/master/code/shell_parse.py)
 
 #### Basic server 1
 
