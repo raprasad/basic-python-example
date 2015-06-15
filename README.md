@@ -57,7 +57,6 @@ If you run into Xcode (or other errors) when running the install, google it.  So
 ```
 cd ~\basic-python-example\code
 workon basic-python-example
-python manage.py runserver
 ```
 
 ### Web example
