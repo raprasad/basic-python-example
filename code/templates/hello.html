@@ -5,8 +5,13 @@
 hello, {{ name }}!
 
 <ul>
-{% for item in list_of_things %}
-    <li>{{ item }}</li>
+{% for line in table_rows %}
+    <tr>
+    {% for item in line %}    
+    <td>{{ x }}</td>
+    {% endfor %}
+    </tr>
 {% endfor %}
 </ul>
 {% endblock %}
+

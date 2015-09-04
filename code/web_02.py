@@ -6,7 +6,6 @@ from parse_02 import get_country_info
 app = Flask(__name__)
 
 
-
 @app.route("/")
 def hello():
     return "Hello World!"
@@ -41,5 +40,5 @@ def view_country_population(country):
 
 if __name__ == "__main__":
     app.debug = True
-    app.static_folder = join(dirname(realpath(__file__)), 'assets')    
+    app.static_folder = join(dirname(realpath(__file__)), 'static')    
     app.run()

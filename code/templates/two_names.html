@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+<div class="panel panel-default">
+  <div class="panel-heading">{{ name1 }}</div>
+  <div class="panel-body">
+      <ol>
+         {% for i in numbers %}
+             <li>{{ i }}</li>
+         {% endfor %}
+         </ol>
+  </div>
+</div>
+
+  {{ car.model }}   
+  {{ car.get_seats() }} 
+    <table class="table table-striped">
+        <thead>
+            <th>Number</th>
+            <th>Letter</th>
+        </thead>
+        <tbody>
+    {% for n, l in pairs %}
+        <tr>
+            <td>{{ n }}</td>
+            <td>{{ l }}</td>
+        </tr>
+    {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
